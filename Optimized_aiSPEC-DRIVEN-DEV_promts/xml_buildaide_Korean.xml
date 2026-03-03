@@ -1,0 +1,44 @@
+<context>
+당신은 세계 최고 수준의 소프트웨어 아키텍트이자, VS Code와 같은 IDE 구축 및 에이전트(Agentic) AI 시스템 통합 전문가입니다.
+</context>
+
+<task>
+에이전트 AI 기반 개발에 최적화된 새로운 코드 에디터의 핵심 아키텍처, 기능 구현 및 필수 문서를 작성하세요.
+</task>
+
+<requirements>
+  <core_features>
+    - 기본 렌더링: 추가 확장 프로그램 없이 마크다운(Markdown) 및 PDF 렌더링을 네이티브로 구현하세요.
+    - 확장 프로그램 관리: Open VSX 확장 프로그램 저장소를 활용하세요. 사용자가 확장 프로그램 파일을 직접 가져오고(import) 설치할 수 있도록 허용하세요.
+    - 워크플로우 모드: 스펙 주도 개발(SDD) 중심이나 기획(Planning) 모드 대신 "Fast(빠른) 모드"를 핵심 워크플로우로 구현하세요.
+  </core_features>
+
+  <ai_and_agentic_features>
+    - LLM 지원: 로컬 모델(예: Ollama, LM Studio)과 클라우드 API 키 기반 모델을 모두 지원하도록 통합하세요.
+    - Ralph Loops 통합: "Ralph Loops"를 확장 프로그램이 아닌 코어 코드에 직접 구현하세요.
+    - Ralph Loops 사양: 사용자가 반복 횟수(특정 횟수 또는 무한)를 설정할 수 있게 하세요. 이 기능은 단일 제품 구축에 집중하는 지속적이고 자율적인 작업을 가능하게 하기 위해, 소프트웨어 수준에서 코드 검사, 감사 및 리뷰를 강제하고 지시해야 합니다.
+  </ai_and_agentic_features>
+
+  <language_and_localization>
+    - 프로세스: 영어로 생각하고 논리를 구성하세요.
+    - 출력 언어: 표준 라이선스(LICENSE) 텍스트를 제외한 절대적으로 모든 문서와 코드 주석은 반드시 한국어와 영어 병기로 작성되어야 합니다.
+  </language_and_localization>
+
+  <legal_and_documentation>
+    - 라이선스: Apache 2.0.
+    - 작성할 문서: `CONTRIBUTION` 및 `NOTICE` 섹션을 매우 세심하고 상세하게 작성하세요.
+    - 공지(Notice) 세부 사항: NOTICE 섹션에는 사용된 외부 소프트웨어나 종속성에 대한 고지 사항이 명시적으로 포함되어야 합니다.
+    - 두 문서는 모두 한국어와 영어로 작성해야 합니다.
+  </legal_and_documentation>
+</requirements>
+
+<constraints>
+  - 환경 제한: 어떠한 설치 명령어(예: `npm install`, `pip install`)도 작성하거나 가정하지 마세요. 현재 환경 제한으로 인해 아무것도 설치해서는 안 됩니다.
+  - 오직 순수한 코드 구조, 로직 구현 및 문서 파일만 제공하세요.
+</constraints>
+
+<instructions>
+  1. 이 IDE의 디렉토리 구조와 아키텍처의 개요를 간략히 설명하세요.
+  2. 핵심 코드 구현을 제공하세요 (특히 Ralph Loops, LLM 관리자 및 Fast 모드 엔진에 집중할 것). 주석은 반드시 한/영(KO/EN) 병기로 작성해야 함을 명심하세요.
+  3. 매우 상세한 `CONTRIBUTION` 및 `NOTICE` 파일을 한/영(KO/EN) 병기로 생성하세요.
+</instructions>
