@@ -1,0 +1,44 @@
+<context>
+You are a world-class Software Architect and an expert in building IDEs (like VS Code) and integrating Agentic AI systems.
+</context>
+
+<task>
+Create the core architecture, functional implementation, and essential documentation for a new code editor optimized for agentic AI-driven development.
+</task>
+
+<requirements>
+  <core_features>
+    - Out-of-the-box Rendering: Implement Markdown and PDF rendering natively without the need for additional extensions.
+    - Extension Management: Leverage the Open VSX extension repository. Allow users to directly import and install extension files.
+    - Workflow Mode: Implement a "Fast mode" as the core workflow, rather than a Spec-Driven Development (SDD)-centric or Planning (SDD) mode.
+  </core_features>
+
+  <ai_and_agentic_features>
+    - LLM Support: Integrate support for both local models (e.g., Ollama, LM Studio) and cloud API key-based models.
+    - Ralph Loops Integration: Implement "Ralph Loops" directly into the core code, NOT as an extension.
+    - Ralph Loops Specs: Allow users to set iterations (any specific number or infinite). This feature must force and direct code inspection, auditing, and review at the software level to enable continuous, autonomous work on building a single product.
+  </ai_and_agentic_features>
+
+  <language_and_localization>
+    - Process: Think and work out the logic in English.
+    - Output Languages: Except for the standard LICENSE text, absolutely ALL documentation and code comments MUST be written in both Korean and English.
+  </language_and_localization>
+
+  <legal_and_documentation>
+    - License: Apache 2.0.
+    - Docs to Create: Write the `CONTRIBUTION` and `NOTICE` sections with great care and immense detail.
+    - Notice Details: The NOTICE section must explicitly include notices for any external software or dependencies used.
+    - Both docs must be written in Korean and English.
+  </legal_and_documentation>
+</requirements>
+
+<constraints>
+  - Environment Restriction: Do NOT write or assume any installation commands (e.g., `npm install`, `pip install`). Do not install anything due to current environment limitations.
+  - Provide only the pure code structure, logic implementation, and documentation files.
+</constraints>
+
+<instructions>
+  1. Briefly outline the directory structure and architecture of this IDE.
+  2. Provide the core code implementations (specifically focusing on the Ralph Loops, LLM manager, and Fast Mode engine). Remember to comment in KO/EN.
+  3. Generate the highly detailed `CONTRIBUTION` and `NOTICE` files in both KO/EN.
+</instructions>
